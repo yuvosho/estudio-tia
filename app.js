@@ -34,6 +34,15 @@ function countUp(el) {
   requestAnimationFrame(step);
 }
 
+// Antes / después en las obras
+document.querySelectorAll('.project .swap').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.project');
+    const antes = card.classList.toggle('show-before');
+    btn.textContent = antes ? 'Ver el después' : 'Ver el antes';
+  });
+});
+
 // Parallax de la franja
 const bandBg = document.querySelector('.band-bg');
 if (bandBg && !matchMedia('(prefers-reduced-motion: reduce)').matches) {

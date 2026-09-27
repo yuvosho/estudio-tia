@@ -72,11 +72,18 @@ body.menu-open .menu { opacity: 1; pointer-events: auto; }
 .work { padding: 20px var(--pad) 100px; max-width: 1010px; margin: 0 auto; }
 .section-title { text-align: center; margin-bottom: 40px; }
 .project { display: block; position: relative; margin-bottom: 20px; }
-.project figure { aspect-ratio: 3 / 2; }
-.project figure::after { content: ""; position: absolute; inset: 55% 0 0; z-index: 2; background: linear-gradient(180deg, transparent, rgba(0,0,0,.55)); }
+.project-media { position: relative; aspect-ratio: 3 / 2; overflow: hidden; }
+.project .shot { position: absolute; inset: 0; }
+.project .shot::after { content: ""; position: absolute; inset: 55% 0 0; z-index: 3; background: linear-gradient(180deg, transparent, rgba(0,0,0,.55)); }
+.project .before { opacity: 0; transition: opacity .7s ease; }
+.project.show-before .before { opacity: 1; }
 .project img { transition: transform 1.2s cubic-bezier(.2,.7,.2,1); }
-.project:hover img { transform: scale(1.04); }
-.project h3 { position: absolute; left: 0; right: 0; bottom: 40px; z-index: 3; text-align: center; color: var(--white); }
+.project:hover img { transform: scale(1.03); }
+.project h3 { position: absolute; left: 0; right: 0; bottom: 40px; z-index: 4; text-align: center; color: var(--white); pointer-events: none; }
+.project h3 span { opacity: .7; }
+.swap { position: absolute; top: 20px; right: 20px; z-index: 5; font-family: var(--sans); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--white); background: rgba(0,0,0,.45); border: 1px solid rgba(255,255,255,.55); padding: 10px 16px 8px; cursor: pointer; backdrop-filter: blur(4px); transition: background .25s, color .25s; }
+.swap:hover { background: var(--white); color: var(--black); }
+.project.show-before .swap { background: var(--white); color: var(--black); }
 .work .center { margin-top: 50px; }
 
 /* ===== Servicios ===== */
@@ -104,6 +111,7 @@ body.menu-open .menu { opacity: 1; pointer-events: auto; }
 .stat .num { font-family: var(--sans); font-size: 40px; line-height: 1; }
 .stat .num b { font-weight: 400; }
 .stat .label { font-family: var(--sans); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; line-height: 1.2; }
+.nota { font-family: var(--sans); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: -24px 0 30px; }
 
 /* ===== Frase ===== */
 .statement { background: var(--black); color: #3a3a3a; padding: 40px var(--pad) 140px; text-align: center; }

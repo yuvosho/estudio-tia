@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>[Nombre del Estudio] · Arquitectura y Renovaciones</title>
-<meta name="description" content="Estudio de arquitectura especializado en renovaciones y reformas integrales de viviendas.">
+<title>[Nombre del Estudio] · Arquitectura y reformas en Buenos Aires</title>
+<meta name="description" content="Estudio de arquitectura en Buenos Aires especializado en reformas integrales de departamentos, PH y casas. Proyecto, permisos y dirección de obra.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=NATS&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
 
 <nav class="menu" id="menu" aria-hidden="true">
   <ul>
-    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#proyectos">Obras</a></li>
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#estudio">El estudio</a></li>
     <li><a href="#testimonios">Testimonios</a></li>
@@ -32,7 +32,8 @@
   </ul>
 </nav>
 
-<!-- ============ 1. HERO ============ -->
+<!-- ============ 1. PORTADA ============ -->
+<!-- FOTO GENERADA CON IA (ambiente). Reemplazar por una obra real cuando haya una foto buena. -->
 <section class="hero" id="inicio">
   <div class="hero-media ph" data-ph="Video o foto principal (horizontal)">
     <!-- Si hay video: descomentar y poner el archivo en fotos/ -->
@@ -40,76 +41,88 @@
     <img src="fotos/hero.jpg" alt="" onerror="this.remove()">
   </div>
   <div class="hero-content">
-    <p class="serif-italic">Espacios que se renuevan sin perder su historia.</p>
-    <a href="#proyectos" class="btn btn-light">Ver proyectos</a>
+    <p class="serif-italic">Departamentos porteños que vuelven a empezar.</p>
+    <a href="#proyectos" class="btn btn-light">Ver obras</a>
   </div>
 </section>
 
 <!-- ============ 2. INTRO ============ -->
 <section class="intro">
-  <h1 class="reveal">Estudio de arquitectura y renovaciones en [Ciudad]</h1>
+  <h1 class="reveal">Estudio de arquitectura y reformas en Buenos Aires</h1>
   <div class="two-col">
-    <p class="reveal">[Texto de presentación 1] Somos un estudio de arquitectura dedicado a transformar casas y departamentos existentes. Cada proyecto empieza escuchando cómo vive la familia y termina en un espacio pensado a su medida.</p>
-    <p class="reveal">[Texto de presentación 2] Nos ocupamos de todo el proceso: relevamiento, anteproyecto, documentación, permisos municipales y dirección de obra, para que la renovación sea clara, ordenada y sin sorpresas.</p>
+    <p class="reveal">Somos un estudio chico que hace una cosa: reformar departamentos, PH y casas en la Ciudad de Buenos Aires. Trabajamos sobre lo que ya está construido, con la cocina de los años setenta, la cañería vieja y el reglamento del consorcio incluidos en el problema.</p>
+    <p class="reveal">Nos ocupamos del recorrido completo: relevamiento, proyecto, planos, trámites ante el Gobierno de la Ciudad y el consorcio, y dirección de obra con nuestros gremios de confianza. Un solo interlocutor de principio a fin, y un presupuesto que se puede seguir semana a semana.</p>
   </div>
 </section>
 
-<!-- ============ 3. ÚLTIMOS PROYECTOS ============ -->
+<!-- ============ 3. OBRAS (antes y después) ============ -->
 <section class="work" id="proyectos">
-  <h2 class="section-title reveal">Últimos proyectos</h2>
+  <h2 class="section-title reveal">Últimas obras</h2>
 
-  <a class="project reveal" href="#">
-    <figure class="ph" data-ph="Proyecto 1 · foto horizontal 3:2"><img src="fotos/proyecto-1.jpg" alt="Proyecto 1" loading="lazy" onerror="this.remove()"></figure>
-    <h3>[Nombre proyecto 1]</h3>
-  </a>
-  <a class="project reveal" href="#">
-    <figure class="ph" data-ph="Proyecto 2 · foto horizontal 3:2"><img src="fotos/proyecto-2.jpg" alt="Proyecto 2" loading="lazy" onerror="this.remove()"></figure>
-    <h3>[Nombre proyecto 2]</h3>
-  </a>
-  <a class="project reveal" href="#">
-    <figure class="ph" data-ph="Proyecto 3 · foto horizontal 3:2"><img src="fotos/proyecto-3.jpg" alt="Proyecto 3" loading="lazy" onerror="this.remove()"></figure>
-    <h3>[Nombre proyecto 3]</h3>
-  </a>
-  <a class="project reveal" href="#">
-    <figure class="ph" data-ph="Proyecto 4 · foto horizontal 3:2"><img src="fotos/proyecto-4.jpg" alt="Proyecto 4" loading="lazy" onerror="this.remove()"></figure>
-    <h3>[Nombre proyecto 4]</h3>
-  </a>
+  <article class="project reveal">
+    <div class="project-media">
+      <figure class="ph shot after" data-ph="Obra 1 · después"><img src="fotos/proyecto-1.jpg" alt="Cocina reformada con isla de mármol y muebles de nogal" loading="lazy" onerror="this.remove()"></figure>
+      <figure class="ph shot before" data-ph="Obra 1 · antes"><img src="fotos/proyecto-1-antes.jpg" alt="El mismo ambiente antes de la reforma" loading="lazy" onerror="this.remove()"></figure>
+    </div>
+    <button class="swap" type="button">Ver el antes</button>
+    <h3>Cocina abierta en nogal y verde <span>· [Barrio]</span></h3>
+  </article>
 
-  <div class="center"><a href="#" class="btn">Ver más proyectos</a></div>
+  <article class="project reveal">
+    <div class="project-media">
+      <figure class="ph shot after" data-ph="Obra 2 · después"><img src="fotos/proyecto-2.jpg" alt="Cocina nueva blanca con mesada negra" loading="lazy" onerror="this.remove()"></figure>
+      <figure class="ph shot before" data-ph="Obra 2 · antes"><img src="fotos/proyecto-2-antes.jpg" alt="La cocina original antes de la reforma" loading="lazy" onerror="this.remove()"></figure>
+    </div>
+    <button class="swap" type="button">Ver el antes</button>
+    <h3>Cocina blanca con mesada negra <span>· [Barrio]</span></h3>
+  </article>
+
+  <article class="project reveal">
+    <div class="project-media">
+      <figure class="ph shot after" data-ph="Obra 3 · después"><img src="fotos/proyecto-3.jpg" alt="Cocina compacta con muebles de madera clara" loading="lazy" onerror="this.remove()"></figure>
+      <figure class="ph shot before" data-ph="Obra 3 · antes"><img src="fotos/proyecto-3-antes.jpg" alt="El departamento vacío antes de equiparlo" loading="lazy" onerror="this.remove()"></figure>
+    </div>
+    <button class="swap" type="button">Ver el antes</button>
+    <h3>Departamento a estrenar, puesta a punto <span>· [Barrio]</span></h3>
+  </article>
+
+  <div class="center"><a href="#contacto" class="btn">Ver más obras</a></div>
 </section>
 
 <!-- ============ 4. SERVICIOS ============ -->
+<!-- Las 4 fotos de esta sección son GENERADAS CON IA (ilustrativas, no son obras del estudio). -->
 <section class="services" id="servicios">
   <div class="services-sticky">
-    <h2 class="reveal">Servicios de arquitectura y renovación</h2>
-    <p class="reveal">[Resumen de servicios] Acompañamos cada etapa: desde la primera visita hasta la entrega de llaves. Proyecto, permisos, dirección de obra e interiorismo, con un solo equipo responsable.</p>
+    <h2 class="reveal">Qué hacemos</h2>
+    <p class="reveal">Reformas integrales, cocinas y baños, PH y casas, y dirección de obra con permisos. Todo con un mismo equipo, para que no tengas que coordinar cinco proveedores que se echan la culpa entre ellos.</p>
     <a href="#contacto" class="btn reveal">Consultar por un servicio</a>
   </div>
   <div class="services-list">
     <article class="service reveal">
       <figure class="ph" data-ph="Servicio 1 · foto vertical 3:4"><img src="fotos/servicio-1.jpg" alt="" loading="lazy" onerror="this.remove()"></figure>
-      <h3>Renovaciones integrales</h3>
-      <p>Reformas completas de casas y departamentos: redistribución de ambientes, instalaciones nuevas y terminaciones.</p>
+      <h3>Reforma integral de departamentos</h3>
+      <p>Redistribuir ambientes, tirar abajo lo que sobra y renovar instalaciones, pisos y aberturas. Departamentos de los años cincuenta a los ochenta que vuelven a funcionar como se vive hoy.</p>
     </article>
     <article class="service reveal">
       <figure class="ph" data-ph="Servicio 2 · foto vertical 3:4"><img src="fotos/servicio-2.jpg" alt="" loading="lazy" onerror="this.remove()"></figure>
       <h3>Cocinas y baños</h3>
-      <p>Los ambientes que más cambian la vida diaria, resueltos con criterio técnico y materiales pensados para durar.</p>
+      <p>Los dos ambientes que más cambian el día a día y donde más se nota una buena resolución técnica: agua, gas, ventilación y muebles a medida.</p>
     </article>
     <article class="service reveal">
       <figure class="ph" data-ph="Servicio 3 · foto vertical 3:4"><img src="fotos/servicio-3.jpg" alt="" loading="lazy" onerror="this.remove()"></figure>
-      <h3>Ampliaciones</h3>
-      <p>Sumar metros donde parecía imposible: nuevos ambientes, entrepisos y terrazas integrados a la casa existente.</p>
+      <h3>PH y casas</h3>
+      <p>Patios, terrazas y ampliaciones en PH de Buenos Aires: sumar metros y luz natural respetando lo que el edificio ya tiene de bueno.</p>
     </article>
     <article class="service reveal">
       <figure class="ph" data-ph="Servicio 4 · foto vertical 3:4"><img src="fotos/servicio-4.jpg" alt="" loading="lazy" onerror="this.remove()"></figure>
-      <h3>Dirección de obra</h3>
-      <p>Seguimiento en obra, coordinación de gremios y control de presupuesto hasta el último detalle.</p>
+      <h3>Dirección de obra y permisos</h3>
+      <p>Trámites ante el Gobierno de la Ciudad y el consorcio, coordinación de gremios, certificados de avance y control del presupuesto hasta la entrega.</p>
     </article>
   </div>
 </section>
 
-<!-- ============ 5. FRANJA PARALLAX ============ -->
+<!-- ============ 5. FRANJA ============ -->
+<!-- FOTO GENERADA CON IA (ambiente). -->
 <section class="band">
   <div class="band-bg ph" data-ph="Foto ambiente (horizontal, oscura)"><img src="fotos/franja.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
   <h2 class="band-text serif-italic">Tu casa, pensada otra vez.</h2>
@@ -120,12 +133,13 @@
   <figure class="about-photo ph reveal" data-ph="Retrato de la arquitecta (vertical)"><img src="fotos/retrato.jpg" alt="[Nombre de la arquitecta]" loading="lazy" onerror="this.remove()"></figure>
   <div class="about-text">
     <h2 class="reveal">[Nombre de la arquitecta], arquitecta</h2>
-    <p class="reveal">[Bio] Arquitecta matriculada con años de experiencia en renovaciones de viviendas. Conoce la obra de cerca, y eso se nota en proyectos que se construyen tal como se dibujaron.</p>
-    <p class="reveal">[Zona] Trabaja en [barrios / ciudades], donde conoce en detalle las normativas y los tiempos de aprobación.</p>
+    <p class="reveal">[Bio] Arquitecta con [X] años dedicados a reformar viviendas en la Ciudad de Buenos Aires. Está en la obra, conoce a los gremios por nombre y dibuja pensando en cómo se va a construir cada detalle.</p>
+    <p class="reveal">Trabaja sobre todo en [barrios: Palermo, Belgrano, Núñez, Recoleta, Caballito], donde ya conoce los tiempos de los trámites y las mañas de los edificios de cada época.</p>
     <div class="stats reveal">
       <div class="stat"><span class="num">+<b data-count="20">0</b></span><span class="label">Años de<br>experiencia</span></div>
       <div class="stat"><span class="num">+<b data-count="150">0</b></span><span class="label">Obras<br>terminadas</span></div>
     </div>
+    <p class="nota reveal">[Confirmar estos dos números antes de publicar]</p>
     <a href="#contacto" class="btn btn-light reveal">Conocé cómo trabajamos</a>
   </div>
 </section>
@@ -137,27 +151,27 @@
 
 <!-- ============ 8. TESTIMONIOS ============ -->
 <section class="testimonials" id="testimonios">
-  <h2 class="section-title reveal">Lo que dicen nuestros clientes</h2>
+  <h2 class="section-title reveal">Lo que dicen los clientes</h2>
   <div class="t-track" id="track">
     <blockquote class="t-card">
       <p>“[Testimonio 1] Pegar acá la reseña real de un cliente, tal cual la escribió.”</p>
-      <footer><strong>[Nombre del proyecto]</strong><span>[Nombre del cliente]</span></footer>
+      <footer><strong>[Obra · Barrio]</strong><span>[Nombre del cliente]</span></footer>
     </blockquote>
     <blockquote class="t-card">
       <p>“[Testimonio 2] Pegar acá la reseña real de un cliente, tal cual la escribió.”</p>
-      <footer><strong>[Nombre del proyecto]</strong><span>[Nombre del cliente]</span></footer>
+      <footer><strong>[Obra · Barrio]</strong><span>[Nombre del cliente]</span></footer>
     </blockquote>
     <blockquote class="t-card">
       <p>“[Testimonio 3] Pegar acá la reseña real de un cliente, tal cual la escribió.”</p>
-      <footer><strong>[Nombre del proyecto]</strong><span>[Nombre del cliente]</span></footer>
+      <footer><strong>[Obra · Barrio]</strong><span>[Nombre del cliente]</span></footer>
     </blockquote>
     <blockquote class="t-card">
       <p>“[Testimonio 4] Pegar acá la reseña real de un cliente, tal cual la escribió.”</p>
-      <footer><strong>[Nombre del proyecto]</strong><span>[Nombre del cliente]</span></footer>
+      <footer><strong>[Obra · Barrio]</strong><span>[Nombre del cliente]</span></footer>
     </blockquote>
     <blockquote class="t-card">
       <p>“[Testimonio 5] Pegar acá la reseña real de un cliente, tal cual la escribió.”</p>
-      <footer><strong>[Nombre del proyecto]</strong><span>[Nombre del cliente]</span></footer>
+      <footer><strong>[Obra · Barrio]</strong><span>[Nombre del cliente]</span></footer>
     </blockquote>
   </div>
   <div class="t-nav">
@@ -169,32 +183,33 @@
 
 <!-- ============ 9. GALERÍA ============ -->
 <section class="gallery">
-  <figure class="ph" data-ph="Galería 1 · horizontal ancha"><img src="fotos/galeria-1.jpg" alt="" loading="lazy" onerror="this.remove()"></figure>
-  <figure class="ph" data-ph="Galería 2 · horizontal ancha"><img src="fotos/galeria-2.jpg" alt="" loading="lazy" onerror="this.remove()"></figure>
+  <figure class="ph" data-ph="Galería 1 · horizontal ancha"><img src="fotos/galeria-1.jpg" alt="Comedor con biblioteca de madera a medida" loading="lazy" onerror="this.remove()"></figure>
+  <figure class="ph" data-ph="Galería 2 · horizontal ancha"><img src="fotos/galeria-2.jpg" alt="Living con frente de guardado y pared verde" loading="lazy" onerror="this.remove()"></figure>
 </section>
 
 <!-- ============ 10. CONTACTO ============ -->
 <section class="contact" id="contacto">
   <div class="contact-info">
-    <h2 class="reveal">Toda renovación empieza con una charla</h2>
-    <p class="reveal">Contanos qué querés cambiar de tu casa, cuánto querés invertir y en qué plazos. Te respondemos con una propuesta concreta para empezar.</p>
-    <p class="reveal">Pedí una primera visita.</p>
+    <h2 class="reveal">Toda reforma empieza con una visita</h2>
+    <p class="reveal">Contanos qué departamento querés reformar, qué te gustaría cambiar y con qué presupuesto contás. Coordinamos una visita, lo miramos en persona y te decimos con franqueza qué se puede hacer y qué no.</p>
+    <p class="reveal">Primera visita sin cargo en la Ciudad de Buenos Aires.</p>
     <ul class="contact-list reveal">
-      <li><a href="tel:+54000000000">[Teléfono]</a></li>
+      <li><a href="tel:+54000000000">[Teléfono / WhatsApp]</a></li>
       <li><a href="mailto:hola@estudio.com">[EMAIL]</a></li>
-      <li>[Dirección del estudio]</li>
+      <li>[Dirección del estudio · CABA]</li>
     </ul>
   </div>
   <form class="contact-form reveal" onsubmit="event.preventDefault();this.querySelector('button').textContent='¡Gracias! Te escribimos pronto';">
     <input type="text" placeholder="Nombre" required>
     <input type="email" placeholder="Email" required>
     <input type="tel" placeholder="Teléfono">
+    <input type="text" placeholder="Barrio">
     <select required>
       <option value="">¿Sobre qué es tu consulta?</option>
-      <option>Renovación integral</option>
+      <option>Reforma integral</option>
       <option>Cocina o baño</option>
-      <option>Ampliación</option>
-      <option>Dirección de obra</option>
+      <option>PH o casa</option>
+      <option>Dirección de obra y permisos</option>
       <option>Otro</option>
     </select>
     <textarea rows="4" placeholder="Contanos tu proyecto"></textarea>
@@ -207,15 +222,15 @@
   <div class="footer-logo">
     <small>Estudio</small>
     <strong>[NOMBRE]</strong>
-    <em>Espacios que se renuevan sin perder su historia.</em>
+    <em>Arquitectura y reformas en Buenos Aires.</em>
   </div>
   <div class="footer-cols">
     <div><h4>Estudio</h4><a href="#estudio">Nosotros</a><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a></div>
-    <div><h4>Servicios</h4><a href="#servicios">Renovaciones integrales</a><a href="#servicios">Cocinas y baños</a><a href="#servicios">Ampliaciones</a><a href="#servicios">Dirección de obra</a></div>
-    <div><h4>Obras</h4><a href="#proyectos">Proyectos</a><a href="#testimonios">Testimonios</a></div>
+    <div><h4>Servicios</h4><a href="#servicios">Reforma integral</a><a href="#servicios">Cocinas y baños</a><a href="#servicios">PH y casas</a><a href="#servicios">Dirección de obra</a></div>
+    <div><h4>Obras</h4><a href="#proyectos">Antes y después</a><a href="#testimonios">Testimonios</a></div>
   </div>
-  <div class="footer-social"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">LinkedIn</a></div>
-  <p class="copy">© [Nombre del Estudio]</p>
+  <div class="footer-social"><a href="#">Instagram</a><a href="#">WhatsApp</a><a href="#">LinkedIn</a></div>
+  <p class="copy">© [Nombre del Estudio] · Buenos Aires</p>
 </footer>
 
 <script src="app.js"></script>
