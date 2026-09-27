@@ -68,7 +68,14 @@ const setActive = () => {
   cards.forEach(c => c.classList.toggle('active', c === best));
   return best;
 };
-track.addEventListener('scroll', setActive, { passive: true });
+// Un solo recálculo por cuadro: si no, el cambio de opacidad en cada evento
+// de scroll deja rastros del cuadro anterior en algunos navegadores.
+let pendiente = false;
+track.addEventListener('scroll', () => {
+  if (pendiente) return;
+  pendiente = true;
+  requestAnimationFrame(() => { pendiente = false; setActive(); });
+}, { passive: true });
 const go = dir => {
   const i = cards.indexOf(setActive());
   const target = cards[Math.max(0, Math.min(cards.length - 1, i + dir))];
